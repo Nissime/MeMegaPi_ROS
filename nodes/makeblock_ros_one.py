@@ -15,8 +15,10 @@ def onRead(v):
 
 def handle_makeblock_motors(req):
     global bot
-    bot.motorRun(M1, req.s1)
-    bot.motorRun(M2, req.s2)
+    #bot.motorRun(M1, req.s1)
+    #bot.motorRun(M2, req.s2)
+    bot.encoderMotorRun(1, req.s1)
+    bot.encoderMotorRun(2, req.s2)
     return 1
 
 
@@ -34,7 +36,8 @@ def main():
     rate = rospy.Rate(10)  # 10hz
     while not rospy.is_shutdown():
         sleep(0.1)
-        bot.ultrasonicSensorRead(6, onRead)
+        #bot.ultrasonicSensorRead(6, onRead)
+        bot.encoderMotorPosition( 1, onRead )
 
 
 if __name__ == '__main__':
