@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="makeblock_ros" type="encoder2_subscribe.py"
+        name="encoder2_listener" output="screen"/>
+
+</launch>

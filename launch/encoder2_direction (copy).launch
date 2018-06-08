@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="makeblock_ros" type="encoder_motor_loop.py"
+        name="motor_2_controller" output="screen"/>
+
+</launch>
