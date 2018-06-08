@@ -1,4 +1,5 @@
 <launch>
+<<<<<<< HEAD
 
   <node pkg="makeblock_ros" name="makeblock_ros_one"
         type="makeblock_ros_one.py" output="screen">
@@ -6,5 +7,9 @@
   <node name="encoder2_subscribe" pkg="makeblock_ros" type="encoder2_subscribe.py">
 
   </node>
+=======
+  <node pkg="makeblock_ros" type="makeblock_ros_one.py"
+        name="makeblock_ros_one" output="screen"/>
+>>>>>>> be1c14b473719aba2bf9dd93f1ce4997d035e929
 
 </launch>
